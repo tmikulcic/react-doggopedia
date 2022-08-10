@@ -105,7 +105,6 @@ body {
 .content-view {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
   overflow: auto;
   gap: 1rem;
   max-width: 100%;
