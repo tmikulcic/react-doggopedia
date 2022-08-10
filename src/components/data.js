@@ -28,4 +28,30 @@ export default [
     breed: 'Schnauzer',
     img: './images/doggos/schnauzer.jpg',
   },
+
+  {
+    id: 6,
+    breed: 'Alaskan Malamute',
+    img: './images/doggos/alaskan-malamute.jpg',
+  },
+  {
+    id: 7,
+    breed: 'Husky',
+    img: './images/doggos/husky.jpg',
+  },
+  {
+    id: 8,
+    breed: 'Chihuahua',
+    img: './images/doggos/chihuahua.jpg',
+  },
+  {
+    id: 9,
+    breed: 'Bernese Mountain Dog',
+    img: './images/doggos/bernese.jpg',
+  },
+  {
+    id: 10,
+    breed: 'Shiba Inu',
+    img: './images/doggos/shiba-inu.jpg',
+  },
 ];
