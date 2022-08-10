@@ -104,12 +104,19 @@ body {
 
 .content-view {
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  overflow: auto;
   gap: 2rem;
-  margin: 1.5rem;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .card {
   border-radius: 8px;
+  margin-top: 2rem;
+  margin-left: 2rem;
   width: 20rem;
   height: 24rem;
   -webkit-box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.75);
