@@ -1,4 +1,4 @@
-import Navbar from './Navbar';
+import Navbar from './components/Navbar';
 import SearchFilter from './components/SearchFilter';
 import ContentView from './components/ContentView';
 
