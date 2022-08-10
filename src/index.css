@@ -18,12 +18,20 @@ body {
   flex-direction: column;
   width: 15vw;
   height: 100vh;
-  box-shadow: inset -2px 0px 0px 0px black;
+  -webkit-box-shadow: 3px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 3px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 3px 0px 5px 0px rgba(0, 0, 0, 0.75);
 }
 .search-filter {
   background-color: #ad6327;
   width: 85vw;
   height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.75);
 }
 .content-view {
   width: 85vw;
@@ -38,7 +46,7 @@ body {
   border-bottom: 1px solid #ad6327;
 }
 .logo-picture {
-  height: 6vh;
+  height: 8vh;
 }
 .logo-text,
 .nav-elements {
@@ -51,4 +59,45 @@ body {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   border-bottom: 1px solid #ad6327;
+}
+
+.filter-button {
+  height: 3rem;
+  font-size: 1.5rem;
+  background-color: #ffebda;
+  color: #ad6327;
+  border-radius: 8px 0 0px 8px;
+  border: solid black 1px;
+  -webkit-box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.75);
+}
+.search-window {
+  padding-left: 1rem;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  font-size: 1.5rem;
+  height: 3rem;
+  width: 40%;
+  border: solid black 1px;
+  -webkit-box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.75);
+}
+.search-button {
+  height: 3rem;
+  font-size: 1.5rem;
+  background-color: #ffebda;
+  color: #ad6327;
+  border-radius: 0px 8px 8px 0px;
+  border: solid black 1px;
+  -webkit-box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.filter-button:active,
+.search-button:active {
+  color: #ffebda;
+  background-color: #ad6327;
 }
