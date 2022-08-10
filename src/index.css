@@ -13,17 +13,42 @@ body {
 }
 
 .navbar {
-  background-color: blue;
+  background-color: #ffebda;
+  display: flex;
+  flex-direction: column;
   width: 15vw;
   height: 100vh;
+  box-shadow: inset -2px 0px 0px 0px black;
 }
 .search-filter {
-  background-color: red;
+  background-color: #ad6327;
   width: 85vw;
   height: 10vh;
 }
 .content-view {
-  background-color: green;
   width: 85vw;
   height: 90vh;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10vh;
+  border-bottom: 1px solid #ad6327;
+}
+.logo-picture {
+  height: 6vh;
+}
+.logo-text,
+.nav-elements {
+  color: #ad6327;
+  font-size: 2rem;
+}
+
+.nav-elements {
+  padding-left: 1.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #ad6327;
 }
