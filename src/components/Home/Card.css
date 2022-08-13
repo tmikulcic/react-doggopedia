@@ -13,6 +13,10 @@
   align-items: center;
 }
 
+.card:hover {
+  transform: scale(1.15);
+}
+
 .card-image {
   border-radius: 8px 8px 0px 0px;
   width: 100%;
