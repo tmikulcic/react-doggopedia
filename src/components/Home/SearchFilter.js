@@ -1,4 +1,5 @@
 import React from 'react';
+import './SearchFilter.css';
 
 // setSearchTerm is shared with parent component
 export default function SearchFilter({ setSearchTerm }) {
