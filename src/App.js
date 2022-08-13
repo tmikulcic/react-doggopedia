@@ -1,13 +1,21 @@
 import React from 'react';
 import Navbar from './components/Navbar';
 import Home from './components/Home/Home';
+import Contact from './components/Home/Contact/Contact';
+import About from './components/Home/About/About';
 import './App.css';
+import { Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
     <div className='main-container'>
       <Navbar />
-      <Home />
+
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/about' element={<About />} />
+        <Route path='/contact' element={<Contact />} />
+      </Routes>
     </div>
   );
 }

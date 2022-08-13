@@ -16,9 +16,11 @@
   height: 10vh;
   border-bottom: 1px solid #ad6327;
 }
+
 .logo-picture {
   height: 8vh;
 }
+
 .logo-text,
 .nav-elements {
   color: #ad6327;
@@ -30,6 +32,7 @@
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   border-bottom: 1px solid #ad6327;
+  text-decoration: none;
 }
 
 .nav-elements:hover {
