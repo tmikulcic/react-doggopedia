@@ -20,13 +20,17 @@ export default function Card(props) {
         className='card-image'
         src={`.${props.item.img}`}
         alt={props.item.breed}
-        onClick={toggleModal}
+        // onClick={toggleModal}
       ></img>
-      <div className='card-name' onClick={toggleModal}>
+      <div
+        className='card-name'
+        // onClick={toggleModal}
+      >
         {props.item.breed}
       </div>
 
       {/* Modal */}
+
       {modal && (
         <div className='modal'>
           <div className='overlay' onClick={toggleModal}>
