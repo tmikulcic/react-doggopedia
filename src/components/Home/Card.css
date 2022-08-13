@@ -1,7 +1,6 @@
 .card {
   border-radius: 8px;
-  margin-top: 2rem;
-  margin-left: 2rem;
+  margin: 2rem 1rem 2rem 2rem;
   width: 20rem;
   height: 24rem;
   -webkit-box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.75);
