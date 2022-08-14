@@ -2,16 +2,19 @@
   background-color: #ad6327;
   width: 85vw;
   height: 10vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   -webkit-box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .filter-button {
-  height: 3rem;
+  height: 2.5rem;
   font-size: 1.5rem;
   background-color: #ffebda;
   color: #ad6327;
@@ -26,7 +29,7 @@
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   font-size: 1.5rem;
-  height: 3rem;
+  height: 2.5rem;
   width: 40%;
   border: solid black 1px;
   -webkit-box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.75);
@@ -34,7 +37,7 @@
   box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.75);
 }
 .search-button {
-  height: 3rem;
+  height: 2.5rem;
   font-size: 1.5rem;
   background-color: #ffebda;
   color: #ad6327;
@@ -47,6 +50,47 @@
 
 .filter-button:active,
 .search-button:active {
+  color: #ffebda;
+  background-color: #ad6327;
+}
+
+.filter {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.5rem;
+}
+
+.filter-radio {
+  height: 2rem;
+  font-size: 1.5rem;
+  background-color: #ffebda;
+  color: #ad6327;
+  border-radius: 0px 8px 8px 0px;
+  border: solid black 1px;
+  -webkit-box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+input[type='radio'] {
+  display: none;
+}
+
+label {
+  cursor: pointer;
+  text-align: center;
+  width: 7rem;
+  height: 2rem;
+  font-size: 1.5rem;
+  background-color: #ffebda;
+  color: #ad6327;
+  border: solid black 1px;
+  -webkit-box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+input[type='radio']:checked + label {
   color: #ffebda;
   background-color: #ad6327;
 }
