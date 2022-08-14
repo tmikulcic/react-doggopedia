@@ -5,6 +5,7 @@ import './Home.css';
 
 export default function Home() {
   const [searchTerm, setSearchTerm] = useState('');
+  const [filterTerm, setFilterTerm] = useState('All');
 
   return (
     <div className='home-container'>

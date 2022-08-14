@@ -7,18 +7,22 @@ export default function SearchFilter({ setSearchTerm }) {
     setSearchTerm(event.target.value);
   }
 
+  function toggleRadio(event) {
+    // setFilterTerm(event.target.value);
+    console.log(event.target.value);
+  }
+
   return (
     <div className='search-filter'>
       <div className='search'>
-        <button className='filter-button'>Filter</button>
         <input
           className='search-window'
           type='text'
           placeholder='Type dog breed...'
           onChange={searchChange}
         ></input>
-        <button className='search-button'>Search</button>
       </div>
+
       <div className='filter'>
         <input
           className='filter-radio'
@@ -26,8 +30,9 @@ export default function SearchFilter({ setSearchTerm }) {
           id='All'
           value='All'
           name='size'
-        />{' '}
-        <label for='All' type='text' name='All' checked='true'>
+          onChange={toggleRadio}
+        />
+        <label for='All' type='text' name='All'>
           All
         </label>
         <input
@@ -36,7 +41,8 @@ export default function SearchFilter({ setSearchTerm }) {
           id='Small'
           value='Small'
           name='size'
-        />{' '}
+          onChange={toggleRadio}
+        />
         <label for='Small' type='text' name='Small'>
           Small
         </label>
@@ -46,7 +52,8 @@ export default function SearchFilter({ setSearchTerm }) {
           id='Medium'
           value='Medium'
           name='size'
-        />{' '}
+          onChange={toggleRadio}
+        />
         <label for='Medium' type='text' name='Medium'>
           Medium
         </label>
@@ -56,7 +63,8 @@ export default function SearchFilter({ setSearchTerm }) {
           id='Large'
           value='Large'
           name='size'
-        />{' '}
+          onChange={toggleRadio}
+        />
         <label for='Large' type='text' name='Large'>
           Large
         </label>

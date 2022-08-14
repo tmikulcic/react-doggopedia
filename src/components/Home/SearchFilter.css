@@ -25,6 +25,7 @@
   box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.75);
 }
 .search-window {
+  margin-top: 0.2rem;
   padding-left: 1rem;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -88,6 +89,10 @@ label {
   -webkit-box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+label:hover {
+  font-weight: bold;
 }
 
 input[type='radio']:checked + label {
