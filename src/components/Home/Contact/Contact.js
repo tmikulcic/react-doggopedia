@@ -10,20 +10,20 @@ export default function Contact() {
         You can follow my work and check for other projects here:
       </div>
 
-      <a href='https://github.com/tmikulcic'>
+      <a href='https://github.com/tmikulcic' target='_blank'>
         <img
           className='contact-logo'
           src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg'
         />
       </a>
       <div className='paragraph'>Check me out on Social Media:</div>
-      <a href='https://facebook.com'>
+      <a href='https://facebook.com' target='_blank'>
         <img
           className='contact-logo'
           src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/facebook/facebook-original.svg'
         />
       </a>
-      <a href='https://twitter.com'>
+      <a href='https://twitter.com' target='_blank'>
         <img
           className='contact-logo'
           src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/twitter/twitter-original.svg'
