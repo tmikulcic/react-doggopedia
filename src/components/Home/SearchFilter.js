@@ -32,7 +32,12 @@ export default function SearchFilter({ setSearchTerm }) {
           name='size'
           onChange={toggleRadio}
         />
-        <label for='All' type='text' name='All'>
+        <label
+          style={{ borderRadius: '8px 0px 0px 8px' }}
+          for='All'
+          type='text'
+          name='All'
+        >
           All
         </label>
         <input
@@ -65,7 +70,12 @@ export default function SearchFilter({ setSearchTerm }) {
           name='size'
           onChange={toggleRadio}
         />
-        <label for='Large' type='text' name='Large'>
+        <label
+          style={{ borderRadius: '0px 8px 8px 0px' }}
+          for='Large'
+          type='text'
+          name='Large'
+        >
           Large
         </label>
       </div>
