@@ -1,15 +1,27 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './SearchFilter.css';
 
 // setSearchTerm is shared with parent component
 export default function SearchFilter({ setSearchTerm }) {
+  const [userInput, setUserInput] = useState({
+    search: '',
+    filter: '',
+  });
+
   function searchChange(event) {
-    setSearchTerm(event.target.value);
+    setUserInput({
+      ...userInput,
+      search: event.target.value,
+    });
+    setSearchTerm(userInput);
   }
 
-  function toggleRadio(event) {
-    // setFilterTerm(event.target.value);
-    console.log(event.target.value);
+  function toggleChange(event) {
+    setUserInput({
+      ...userInput,
+      filter: event.target.value,
+    });
+    setSearchTerm(userInput);
   }
 
   return (
@@ -30,7 +42,7 @@ export default function SearchFilter({ setSearchTerm }) {
           id='All'
           value='All'
           name='size'
-          onChange={toggleRadio}
+          onChange={toggleChange}
         />
         <label
           style={{ borderRadius: '8px 0px 0px 8px' }}
@@ -46,7 +58,7 @@ export default function SearchFilter({ setSearchTerm }) {
           id='Small'
           value='Small'
           name='size'
-          onChange={toggleRadio}
+          onChange={toggleChange}
         />
         <label for='Small' type='text' name='Small'>
           Small
@@ -57,7 +69,7 @@ export default function SearchFilter({ setSearchTerm }) {
           id='Medium'
           value='Medium'
           name='size'
-          onChange={toggleRadio}
+          onChange={toggleChange}
         />
         <label for='Medium' type='text' name='Medium'>
           Medium
@@ -68,7 +80,7 @@ export default function SearchFilter({ setSearchTerm }) {
           id='Large'
           value='Large'
           name='size'
-          onChange={toggleRadio}
+          onChange={toggleChange}
         />
         <label
           style={{ borderRadius: '0px 8px 8px 0px' }}

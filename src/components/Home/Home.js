@@ -4,8 +4,10 @@ import ContentView from './ContentView';
 import './Home.css';
 
 export default function Home() {
-  const [searchTerm, setSearchTerm] = useState('');
-  const [filterTerm, setFilterTerm] = useState('All');
+  const [searchTerm, setSearchTerm] = useState({
+    search: '',
+    filter: '',
+  });
 
   return (
     <div className='home-container'>

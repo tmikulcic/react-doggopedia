@@ -10,11 +10,14 @@ export default function ContentView({ searchTerm }) {
   useEffect(() => {
     Aos.init({ duration: 2000 });
   }, []);
+
   // How to map filtered data (search)
   const cards = data
     .filter((value) => {
-      if (searchTerm === '') return value;
-      else if (value.breed.toLowerCase().includes(searchTerm.toLowerCase()))
+      if (searchTerm.search === '') return value;
+      else if (
+        value.breed.toLowerCase().includes(searchTerm.search.toLowerCase())
+      )
         return value;
     })
     .map((item) => {
@@ -22,8 +25,10 @@ export default function ContentView({ searchTerm }) {
     });
 
   return (
-    <div data-aos='fade-up' className='content-view'>
-      {cards}
+    <div>
+      <div data-aos='fade-up' className='content-view'>
+        {cards}
+      </div>
     </div>
   );
 }
