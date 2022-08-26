@@ -2,50 +2,35 @@ import React, { useState } from 'react';
 import './Card.css';
 
 export default function Card(props) {
-  const [modal, setModal] = useState(false);
+  const [isHovering, setIsHovering] = useState(false);
 
-  const toggleModal = () => {
-    setModal(!modal);
+  const handleMouseOver = () => {
+    setIsHovering(true);
   };
 
-  if (modal) {
-    document.body.classList.add('active-modal');
-  } else {
-    document.body.classList.remove('active-modal');
-  }
+  const handleMouseOut = () => {
+    setIsHovering(false);
+  };
 
   return (
-    <div className='card'>
-      <img
-        className='card-image'
-        src={`.${props.item.img}`}
-        alt={props.item.breed}
-        // onClick={toggleModal}
-      ></img>
-      <div
-        className='card-name'
-        // onClick={toggleModal}
-      >
-        {props.item.breed}
+    <div
+      className='card'
+      onMouseOver={handleMouseOver}
+      onMouseOut={handleMouseOut}
+    >
+      <div className='unopen'>
+        <img
+          className='card-image'
+          src={`.${props.item.img}`}
+          alt={props.item.breed}
+        ></img>
+        <div className='card-name'>{props.item.breed}</div>
       </div>
-
-      {/* Modal */}
-
-      {modal && (
-        <div className='modal'>
-          <div className='overlay' onClick={toggleModal}>
-            <div className='modal-content'>
-              <img
-                className='card-image'
-                src={`.${props.item.img}`}
-                alt={props.item.breed}
-                onClick={toggleModal}
-              ></img>
-              <div className='card-name' onClick={toggleModal}>
-                {props.item.breed}
-              </div>
-            </div>
-          </div>
+      {isHovering && (
+        <div className='open' onMouseOver={handleMouseOut}>
+          <div className='breed-info'>Size: {props.item.size}</div>
+          <div className='breed-info'>Description:</div>
+          <div className='breed-info'>{props.item.description}</div>
         </div>
       )}
     </div>
