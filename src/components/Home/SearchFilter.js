@@ -45,7 +45,7 @@ export default function SearchFilter({ setSearchTerm }) {
         />
         <label
           style={{ borderRadius: '8px 0px 0px 8px' }}
-          for='All'
+          htmlFor='All'
           type='text'
           name='All'
         >
@@ -59,7 +59,7 @@ export default function SearchFilter({ setSearchTerm }) {
           name='size'
           onChange={toggleChange}
         />
-        <label for='Small' type='text' name='Small'>
+        <label htmlFor='Small' type='text' name='Small'>
           Small
         </label>
         <input
@@ -70,7 +70,7 @@ export default function SearchFilter({ setSearchTerm }) {
           name='size'
           onChange={toggleChange}
         />
-        <label for='Medium' type='text' name='Medium'>
+        <label htmlFor='Medium' type='text' name='Medium'>
           Medium
         </label>
         <input
@@ -83,7 +83,7 @@ export default function SearchFilter({ setSearchTerm }) {
         />
         <label
           style={{ borderRadius: '0px 8px 8px 0px' }}
-          for='Large'
+          htmlFor='Large'
           type='text'
           name='Large'
         >
