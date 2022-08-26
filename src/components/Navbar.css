@@ -2,8 +2,8 @@
   background-color: #ffebda;
   display: flex;
   flex-direction: column;
-  width: 15vw;
-  min-width: 15vw;
+  width: 18vw;
+  min-width: 18vw;
   height: 100vh;
   -webkit-box-shadow: 3px 0px 5px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 3px 0px 5px 0px rgba(0, 0, 0, 0.75);
@@ -14,7 +14,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 10vh;
+  height: 12vh;
   border-bottom: 1px solid #ad6327;
 }
 

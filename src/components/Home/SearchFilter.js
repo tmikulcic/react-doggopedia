@@ -3,24 +3,16 @@ import './SearchFilter.css';
 
 // setSearchTerm is shared with parent component
 export default function SearchFilter({ setSearchTerm }) {
-  const userInput = {
-    search: '',
-    filter: '',
-  };
-
   function searchChange(event) {
-    setSearchTerm({
-      ...userInput,
-      search: event.target.value,
+    setSearchTerm((prevState) => {
+      return { ...prevState, search: event.target.value };
     });
   }
 
   function toggleChange(event) {
-    setSearchTerm({
-      ...userInput,
-      filter: event.target.value,
+    setSearchTerm((prevState) => {
+      return { ...prevState, filter: event.target.value };
     });
-    console.log(event.target.value);
   }
 
   return (
