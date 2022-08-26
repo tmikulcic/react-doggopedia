@@ -1,27 +1,26 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './SearchFilter.css';
 
 // setSearchTerm is shared with parent component
 export default function SearchFilter({ setSearchTerm }) {
-  const [userInput, setUserInput] = useState({
+  const userInput = {
     search: '',
     filter: '',
-  });
+  };
 
   function searchChange(event) {
-    setUserInput({
+    setSearchTerm({
       ...userInput,
       search: event.target.value,
     });
-    setSearchTerm(userInput);
   }
 
   function toggleChange(event) {
-    setUserInput({
+    setSearchTerm({
       ...userInput,
       filter: event.target.value,
     });
-    setSearchTerm(userInput);
+    console.log(event.target.value);
   }
 
   return (
