@@ -31,7 +31,7 @@ export default function SearchFilter({ setSearchTerm }) {
           className='filter-radio'
           type='radio'
           id='All'
-          value='All'
+          value=''
           name='size'
           onChange={toggleChange}
         />

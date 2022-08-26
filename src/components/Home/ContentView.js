@@ -14,9 +14,19 @@ export default function ContentView({ searchTerm }) {
   // How to map filtered data (search)
   const cards = data
     .filter((value) => {
-      if (searchTerm.search === '') return value;
+      if (
+        searchTerm.search === '' &&
+        (searchTerm.filter === '' || searchTerm.filter === 'All')
+      )
+        return value;
       else if (
-        value.breed.toLowerCase().includes(searchTerm.search.toLowerCase())
+        value.breed.toLowerCase().includes(searchTerm.search.toLowerCase()) &&
+        (searchTerm.filter === '' || searchTerm.filter === 'All')
+      )
+        return value;
+      else if (
+        value.breed.toLowerCase().includes(searchTerm.search.toLowerCase()) &&
+        value.size === searchTerm.filter
       )
         return value;
     })
